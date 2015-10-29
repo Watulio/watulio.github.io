@@ -250,7 +250,7 @@
                             objectcount++;
                             valorParcial[valorcount - 1] = parseFloat(x.elements[1].value);
                             valorFinal[valorcount - 1] = parseFloat(x.elements[0].value);
-                            valorPerdido[valorcount - 1] = parseFloat(x.elements[1].value) - ((parseFloat(x.elements[1].value) * parseFloat(x.elements[0].value)) / 100.0);
+                            valorPerdido[valorcount - 1] = (parseFloat(x.elements[1].value) - ((parseFloat(x.elements[1].value) * parseFloat(x.elements[0].value)) / 100.0)).toFixed(2);
                             valorActive[valorcount - 1] = true;
                             valorNombre[valorcount - 1] = x.elements[2].value;
                             calculateGrade();

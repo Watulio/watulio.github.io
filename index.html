@@ -248,9 +248,9 @@
                         if (isNumber(x.elements[0].value) && isNumber(x.elements[1].value)) {
                             valorcount++;
                             objectcount++;
-                            valorParcial[valorcount - 1] = parseFloat(x.elements[0].value);
-                            valorFinal[valorcount - 1] = parseFloat(x.elements[1].value);
-                            valorPerdido[valorcount - 1] = parseFloat(x.elements[0].value) - ((parseFloat(x.elements[0].value) * parseFloat(x.elements[1].value)) / 100.0);
+                            valorParcial[valorcount - 1] = parseFloat(x.elements[1].value);
+                            valorFinal[valorcount - 1] = parseFloat(x.elements[0].value);
+                            valorPerdido[valorcount - 1] = parseFloat(x.elements[1].value) - ((parseFloat(x.elements[1].value) * parseFloat(x.elements[0].value)) / 100.0);
                             valorActive[valorcount - 1] = true;
                             valorNombre[valorcount - 1] = x.elements[2].value;
                             calculateGrade();
